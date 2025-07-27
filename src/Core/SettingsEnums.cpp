@@ -173,6 +173,15 @@ IMPLEMENT_SETTING_ENUM(MsgPackUUIDRepresentation, ErrorCodes::BAD_ARGUMENTS,
                         {"str", FormatSettings::MsgPackUUIDRepresentation::STR},
                         {"ext", FormatSettings::MsgPackUUIDRepresentation::EXT}})
 
+IMPLEMENT_SETTING_ENUM(HashEnumFunction, ErrorCodes::BAD_ARGUMENTS,
+                       {{"sipHash128", FormatSettings::HashEnumFunction::SIP_HASH_128},
+                        {"sipHash64", FormatSettings::HashEnumFunction::SIP_HASH_64},
+                        {"cityHash128", FormatSettings::HashEnumFunction::CITY_HASH_128},
+                        {"cityHash64", FormatSettings::HashEnumFunction::CITY_HASH_64},
+                        {"murmurHash3_128", FormatSettings::HashEnumFunction::MURMUR_HASH3_128},
+                        {"murmurHash3_64", FormatSettings::HashEnumFunction::MURMUR_HASH3_64},
+                        {"xxHash64", FormatSettings::HashEnumFunction::XX_HASH_64}})
+
 IMPLEMENT_SETTING_ENUM(Dialect, ErrorCodes::BAD_ARGUMENTS,
     {{"clickhouse", Dialect::clickhouse},
      {"kusto", Dialect::kusto},
