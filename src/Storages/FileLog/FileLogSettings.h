@@ -28,6 +28,7 @@ struct FileLogSettingsImpl;
     M(CLASS_NAME, MaxThreads) \
     M(CLASS_NAME, Milliseconds) \
     M(CLASS_NAME, MsgPackUUIDRepresentation) \
+    M(CLASS_NAME, HashEnumFunction) \
     M(CLASS_NAME, ORCCompression) \
     M(CLASS_NAME, ParquetCompression) \
     M(CLASS_NAME, ParquetVersion) \

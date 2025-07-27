@@ -28,6 +28,7 @@ struct NATSSettingsImpl;
     M(CLASS_NAME, Int64) \
     M(CLASS_NAME, IntervalOutputFormat) \
     M(CLASS_NAME, MsgPackUUIDRepresentation) \
+    M(CLASS_NAME, HashEnumFunction) \
     M(CLASS_NAME, Milliseconds) \
     M(CLASS_NAME, ORCCompression) \
     M(CLASS_NAME, ParquetCompression) \

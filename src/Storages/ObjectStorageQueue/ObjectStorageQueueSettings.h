@@ -31,6 +31,7 @@ struct StorageID;
     M(CLASS_NAME, Int64) \
     M(CLASS_NAME, IntervalOutputFormat) \
     M(CLASS_NAME, MsgPackUUIDRepresentation) \
+    M(CLASS_NAME, HashEnumFunction) \
     M(CLASS_NAME, ObjectStorageQueueAction) \
     M(CLASS_NAME, ObjectStorageQueueMode) \
     M(CLASS_NAME, ORCCompression) \

@@ -232,6 +232,9 @@ The number of columns in inserted MsgPack data. Used for automatic schema infere
     DECLARE(MsgPackUUIDRepresentation, output_format_msgpack_uuid_representation, FormatSettings::MsgPackUUIDRepresentation::EXT, R"(
 The way how to output UUID in MsgPack format.
 )", 0) \
+    DECLARE(HashEnumFunction, output_format_hash_function, FormatSettings::HashEnumFunction::SIP_HASH_128, R"(
+Hash function for Hash output format. Supported: sipHash128 (default), sipHash64, cityHash128, cityHash64, murmurHash3_128, murmurHash3_64, xxHash64
+)", 0) \
     DECLARE(UInt64, input_format_max_rows_to_read_for_schema_inference, 25000, R"(
 The maximum rows of data to read for automatic schema inference.
 )", 0) \

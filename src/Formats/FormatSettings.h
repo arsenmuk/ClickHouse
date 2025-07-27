@@ -527,6 +527,22 @@ struct FormatSettings
     {
         bool escape_special_characters = false;
     } markdown{};
+
+    enum class HashEnumFunction : uint8_t
+    {
+        SIP_HASH_128,
+        SIP_HASH_64,
+        CITY_HASH_128,
+        CITY_HASH_64,
+        MURMUR_HASH3_128,
+        MURMUR_HASH3_64,
+        XX_HASH_64,
+    };
+
+    struct
+    {
+        HashEnumFunction function = HashEnumFunction::SIP_HASH_128;
+    } hash{};
 };
 
 }

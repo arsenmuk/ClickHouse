@@ -17,7 +17,7 @@ const auto KAFKA_MAX_THREAD_WORK_DURATION_MS = 60000;
 // 10min
 const auto KAFKA_CONSUMERS_POOL_TTL_MS_MAX = 600'000;
 
-/// List of available types supported in RabbitMQSettings object
+/// List of available types supported in KafkaSettings object
 #define KAFKA_SETTINGS_SUPPORTED_TYPES(CLASS_NAME, M) \
     M(CLASS_NAME, ArrowCompression) \
     M(CLASS_NAME, Bool) \
@@ -35,6 +35,7 @@ const auto KAFKA_CONSUMERS_POOL_TTL_MS_MAX = 600'000;
     M(CLASS_NAME, IntervalOutputFormat) \
     M(CLASS_NAME, Milliseconds) \
     M(CLASS_NAME, MsgPackUUIDRepresentation) \
+    M(CLASS_NAME, HashEnumFunction) \
     M(CLASS_NAME, ORCCompression) \
     M(CLASS_NAME, ParquetCompression) \
     M(CLASS_NAME, ParquetVersion) \
